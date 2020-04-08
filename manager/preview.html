@@ -1,0 +1,65 @@
+<html>
+<head>
+  <meta charset='utf-8'>
+  <link rel='shortcut icon' href='favicon.ico'>
+  <title>Shopcase</title>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap&subset=cyrillic' rel='stylesheet'>
+  <link rel='stylesheet' href='files/preview.css'>
+</head>
+<body>
+  <div class='help-text'>
+    Левая кнопка - вращение.
+    Правая кнопка - перемещение.
+    Средняя кнопка (колесико) - приближение/отдаление.
+  </div>
+  <canvas id='3d' class='viewer'></canvas><div class='block'>
+    <div class='content'>
+      <h1 class='header'>Ванная комната</h1>
+      <h2 class='type'>Настенная плитка</h2>
+      <div class='item' data-t='1' data-r='2.5' id='wall1'>
+        <img class='item-image' src='files/preview/w1t.jpg'>
+        <p class='item-name'>Герцог, 40р/м²</p>
+      </div>
+      <div class='item' data-t='2' data-r='6' id='wall2'>
+        <img class='item-image' src='files/preview/w2t.jpg'>
+        <p class='item-name'>Португалия, 25р/м²</p>
+      </div>
+      <div class='item' data-t='3' data-r='4' id='wall3'>
+        <img class='item-image' src='files/preview/w3t.jpg'>
+        <p class='item-name'>Кристалл, 15р/м²</p>
+      </div>
+      <h2 class='type'>Напольная плитка</h2>
+      <div class='item' data-t='1' data-r='3' id='floor1'>
+        <img class='item-image' src='files/preview/f1t.jpg'>
+        <p class='item-name'>Античность, 30р/м²</p>
+      </div>
+      <div class='item' data-t='2' data-r='4' id='floor2'>
+        <img class='item-image' src='files/preview/f2t.jpg'>
+        <p class='item-name'>Классика, 40р/м²</p>
+      </div>
+      <div class='item' data-t='3' data-r='2' id='floor3'>
+        <img class='item-image' src='files/preview/f3t.jpg'>
+        <p class='item-name'>Загадка, 45р/м²</p>
+      </div>
+      <div class='button-wrap'>
+        <button class='continue'>Продолжить</button>
+      </div>
+    </div>
+  </div>
+  <div class='action'>
+    <a class='button' href='/#form'>Индивидуальная разработка проекта для Вашего бизнеса</a>
+  </div>
+  <script src='files/3d/three.min.js'></script>
+  <script src='files/3d/GLTFLoader.js'></script>
+  <script src='files/3d/DRACOLoader.js'></script>
+  <script src='files/3d/OrbitControls.js'></script>
+  <script src='files/3d/TrackballControls.js'></script>
+  <script src='files/3d/RectAreaLightUniformsLib.js'></script>
+  <script src='files/3d/RGBELoader.js'></script>
+  <script src='files/3d/HDRCubeTextureLoader.js'></script>
+  <script src='files/3d/PMREMGenerator.js'></script>
+  <script src='files/3d/PMREMCubeUVPacker.js'></script>
+  <script src='files/3d/viewer.js'></script>
+  <script src='files/preview.js'></script>
+</body>
+</html>
